@@ -172,8 +172,10 @@ function onModeClick(event){
 }
 
 function onDestroyClick(event){
+  ctx.save();
   ctx.fillStyle = "white";
   ctx.fillRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+  ctx.restore();
 }
 
 function onEragerClick() {
